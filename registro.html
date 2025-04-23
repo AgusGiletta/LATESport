@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registrarse</title>
+</head>
+<body>
+    <h1>Registrarse</h1>
+    <br>
+
+    <form>
+        <div>
+            <label for="txtNombre">
+                <b>Nombre:</b>
+            </label>
+            <!-- Required: hace que el campo sea obligatorio-->
+            <input type="text" id="txtNombre" name="txtNombre" placeholder="Ingrese su nombre" required/>
+            <br><br>
+            <label for="txtApellido">
+                <b>Apellido:</b>
+            </label>
+            <input type="text" id="txtApellido" name="txtApellido" placeholder="Ingrese su apellido" required/>
+        </div>
+      
+        <div>
+            <br><br>
+            <label for="txtEmail">
+                <b>Email:</b>
+            </label>
+            <input type="email" id="txtEmail" name="txtEmail" placeholder="Ingrese su email" required/>
+            <br><br>
+            <label for="txtContraseña">
+                <b>Contraseña:</b>
+            </label>
+            <input type="password" id="txtContraseña" name="txtContraseña" placeholder="Ingrese su contraseña" required/>
+        </div>
+   
+        <div>
+            <br><br>
+            <label for="txtFechaNaciminento">
+                <b>Fecha de nacimiento:</b>
+            </label>
+            <input type="date" id="txtFechaNaciminento" name="txtFechaNaciminento"/>
+        </div>
+        <br>
+
+        <div>
+            <br>
+            <input type="submit" value="Registrarse"/>
+        </div>
+    </form>
+</body>
+</html>
