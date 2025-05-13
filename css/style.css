@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap'); /*Importa la fuente de google fonts*/
+
+/*El punto antes del elemento permite decirte que es una clase*/
+.top-right { 
+    text-align: right; /* Sirve para alinear el texto */
+    padding: 16px;
+}
+
+/* Botón Log out */
+.button-log {
+    background-color: #d9534f;
+    color: white;
+    padding: 8px 16px; /*Sirve para separar los margenes (en sus cuatro lados) de adentro hacia el centro; si lo queremos modificar de forma inividual se usa el left, right. buttom y top*/
+    border: none; /*Sirve para darle un borde al contenedor*/
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.button-log:hover { /*Sirve para hacer un efecto de hover en el botón*/
+    background-color: #c9302c;
+    transition: all ease-in-out 0.2s; /*Sirve para hacer un efecto de transicion*/
+}
+
+/* Navbar */
+.navbar {
+    margin: 16px auto; /*Sirve para separar los margenes (en sus cuatro lados) del exterior; si lo queremos modificar de forma inividual se usa el left, right. buttom y top*/
+    text-align: center;
+}
+
+/*Important: en el caso de que haya dos clases con el mismo nombre, predomina la que tenga el !important*/
+
+.nav-links {
+    list-style: none;
+    padding: 0;
+    display: inline-flex;
+    gap: 12px;
+}
+
+.nav-links li {
+    font-weight: bold;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #333;
+}
+
+.nav-links a:hover {
+    color: #007BFF;
+}
+
+/* Logo centrado */
+.logo-container {
+    text-align: center;
+    margin-top: 16px;
+}
+
+/*El # antes del nombre permite decirte que es un id*/
+#bienvenida {  /* Título de bienvenida */
+    text-align: center;
+    color: #10151b;
+    margin-top: 24px;
+    font-size: 2em;
+}
+
+/*FlexBox
+.flex-container {
+    display: flex; /*Quiere decir que es un componente flexible
+    flex-flow: row;
+    justify-content: center;
+    align-items: stretch; 
+}*/
+
+/*CSS Grid
+.grid-container {
+    margin: 32px;
+    display: grid; /*Transforma el componente en una grilla
+    grid-template-columns: 1fr 1fr 1fr; /*Crea tres columnas iguales; fr= fraccion; se debe cambiar el numero de la fraccion si quiero que alguna sea mas grande. Ej: 1fr 2fr 1fr 
+    grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr)); /*Aca uno le dice al codigo que repita la configuracion que esta entre () con un minimo de 15rem y un maximo de 1fr
+    gap: 10rem ; /*Es el espacio entre las columnas
+}*/
+
+/*
+.container {
+    margin: 1rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /*Columnas
+    grid-template-rows: repeat(3, 1fr); /*Filas
+    gap: 1rem
+}
+
+.item {
+    background-color: #d9534f;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+    border: 1px solid #a32823;
+    border-radius: 4px;
+    cursor: pointer;
+}*/
+
+/* Contenedores generales
+.container {
+    width: 400px; /*Sirve para darle un ancho al contenedor (en relacion a su padre, es decir, el body)
+    margin: 32px auto;
+    background-color: white;
+    padding: 24px;
+    border-radius: 8px; 
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}*/
+
+.container{
+    display: grid;
+    grid-template-areas: 
+    "header header" /*asi es el orden por filas*/
+    "sidebar main"
+    "footer footer";
+    height: 98vh;
+    grid-template-columns: 300px 1fr;
+    grid-template-rows: 80px 1fr 80px;
+}
+
+.header {
+    grid-area: header;
+    background-color: #007BFF;
+}
+
+.sidebar {
+    grid-area: sidebar;
+    background-color: #d9534f;
+}
+
+.main {
+    grid-area: main;
+    background-color: blueviolet;
+}
+
+.footer {
+   grid-area: footer;
+   background-color: #686767;
+}
+
+.main-container {
+    margin: 32px;
+}
+
+.container h1 {
+    color: #333;
+}
+
+.container p {
+    color: #555;
+    line-height: 1.6;
+}
+
+/*
+footer { /* Cuando usamos el elemento se le aplican a todos los cambios por igual, ej: hay dos botones, y uso el elemento boton se le aplican a ambos los cambios
+    text-align: center;
+    background-color: #686767;
+    color: white;
+    padding: 16px 0;
+    margin-top: 40px;
+}/*

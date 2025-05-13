@@ -1,59 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>LATESport\Registro</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LATE Sport - Registro</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100..900&display=swap" rel="stylesheet" />
 </head>
 <body>
-    <table align="center">
-        <tr>
-            <td><a href="index.html">Home</a></td>
-        </tr>
-    </table>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <ul class="nav-links">
+            <li><a href="iniciar_sesion.html">Iniciar Sesión</a></li>
+            <li>|</li>
+            <li><a href="registro.html">Registrarse</a></li>
+        </ul>
+    </nav>
 
-    <div align="center"><img src="./Assets/Late logo_page-0001.jpg" alt="Logo Tienda Deportiva" width="320" height="200"></div>
+    <div class="logo-container">
+        <img src="./Assets/Late logo_page-0001.jpg" alt="Logo Tienda Deportiva" width="320" height="200" />
+    </div>
 
     <h1>Registrarse</h1>
     <form>
         <div>
-            <label for="txtNombre">
-                <b>Nombre:</b>
-            </label>
-            <!-- Required: hace que el campo sea obligatorio-->
-            <input type="text" id="txtNombre" name="txtNombre" placeholder="Ingrese su nombre" required/>
+            <label for="txtNombre"><b>Nombre:</b></label>
+            <input type="text" id="txtNombre" name="txtNombre" placeholder="Ingrese su nombre" required />
             <br><br>
-            <label for="txtApellido">
-                <b>Apellido:</b>
-            </label>
-            <input type="text" id="txtApellido" name="txtApellido" placeholder="Ingrese su apellido" required/>
+
+            <label for="txtApellido"><b>Apellido:</b></label>
+            <input type="text" id="txtApellido" name="txtApellido" placeholder="Ingrese su apellido" required />
         </div>
-      
+
         <div>
             <br><br>
-            <label for="txtEmail">
-                <b>Email:</b>
-            </label>
-            <input type="email" id="txtEmail" name="txtEmail" placeholder="Ingrese su email" required/>
+            <label for="txtEmail"><b>Email:</b></label>
+            <input type="email" id="txtEmail" name="txtEmail" placeholder="Ingrese su email" required />
             <br><br>
-            <label for="txtContraseña">
-                <b>Contraseña:</b>
-            </label>
-            <input type="password" id="txtContraseña" name="txtContraseña" placeholder="Ingrese su contraseña" required/>
+
+            <label for="txtContraseña"><b>Contraseña:</b></label>
+            <input type="password" id="txtContraseña" name="txtContraseña" placeholder="Ingrese su contraseña" required />
         </div>
-   
+
         <div>
             <br><br>
-            <label for="txtFechaNaciminento">
-                <b>Fecha de nacimiento:</b>
-            </label>
-            <input type="date" id="txtFechaNaciminento" name="txtFechaNaciminento"/>
+            <label for="txtFechaNacimiento"><b>Fecha de nacimiento:</b></label>
+            <input type="date" id="txtFechaNacimiento" name="txtFechaNacimiento" />
         </div>
         <br>
 
         <div>
             <br>
-            <input type="submit" value="Registrarse"/>
+            <input type="submit" value="Registrarse" />
         </div>
 
         <p>¿Ya tienes una cuenta? <a href="iniciar_sesion.html">Iniciar sesión</a></p>

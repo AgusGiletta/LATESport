@@ -1,42 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>LATESport\InciarSesion</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LATE Sport - Iniciar Sesión</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100..900&display=swap" rel="stylesheet" />
 </head>
 <body>
-    <table align="center">
-        <tr>
-            <td><a href="index.html">Home</a></td>
-        </tr>
-    </table>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <ul class="nav-links">
+            <li><a href="iniciar_sesion.html">Iniciar Sesión</a></li>
+            <li>|</li>
+            <li><a href="registro.html">Registrarse</a></li>
+        </ul>
+    </nav>
 
-    <div align="center"><img src="./Assets/Late logo_page-0001.jpg" alt="Logo Tienda Deportiva" width="320" height="200"></div>
+    <div class="logo-container">
+        <img src="./Assets/Late logo_page-0001.jpg" alt="Logo Tienda Deportiva" width="320" height="200" />
+    </div>
 
     <h1>Iniciar Sesión</h1>
     <form>
         <div>
-            <label for="txtEmail">
-                <b>Email:</b>
-            </label>
+            <label for="txtEmail"><b>Email:</b></label>
             <input type="email" id="txtEmail" name="txtEmail" placeholder="Ingrese su email" required />
             <br><br>
-            <label for="txtContraseña">
-                <b>Contraseña:</b>
-            </label>
-            <input type="password" id="txtContraseña" name="txtContraseña" placeholder="Ingrese su contraseña" required/>
-            <br><br>
 
-            <div>
-                <br>
-                <input type="submit" value="Iniciar sesión"/>
-            </div>
-            
-            <p>¿No tienes una cuenta? <a href="registro.html">Regístrate aquí</a></p>
-            
+            <label for="txtContraseña"><b>Contraseña:</b></label>
+            <input type="password" id="txtContraseña" name="txtContraseña" placeholder="Ingrese su contraseña" required />
+            <br><br>
         </div>
+
+        <div>
+            <br>
+            <input type="submit" value="Iniciar sesión" />
+        </div>
+
+        <p>¿No tienes una cuenta? <a href="registro.html">Regístrate aquí</a></p>
     </form>
-    
 </body>
 </html>

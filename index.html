@@ -1,45 +1,107 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>LATESport\Home</title>
-</head>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>LATE Sport | Home</title>
+      
+        <!-- Enlace a tu hoja de estilos local -->
+        <link rel="stylesheet" href="css/style.css" />
+      
+        <!-- Fuente Roboto desde Google Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet" />
+      </head>
 
 <body>
-    <div style="text-align: right;">
-        <input type="submit" value="Cerrar sesión"/>
-      </div>
-    <!-- Navbar-->
-    <nav>
-        <table align="center">
-            <!-- Crea una fila en la tabla-->
-            <tr>
-                <!-- Crea una celda en la tabla-->
-                <td><a href="iniciar_sesion.html">Iniciar Sesion</a></td>
-                <td>|</td>
-                <td><a href="registro.html">Registrarse</a></td>
-            </tr>
-        </table>
+    <div class="top-right">
+        <button class="button-log">Log out</button>
+    </div>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <ul class="nav-links">
+            <li><a href="iniciar_sesion.html">Iniciar Sesión</a></li>
+            <li>|</li>
+            <li><a href="registro.html">Registrarse</a></li>
+        </ul>
     </nav>
 
-    <div align="center"><img src="./Assets/Late logo_page-0001.jpg" alt="Logo Tienda Deportiva" width="320" height="200"></div>
-    <h1 align="center">Bienvenidos a la Tienda Deportiva de LATE Sport</h1>
-   
-    <table align="center">
-        <!-- Crea una fila en la tabla-->
-        <tr>
-            <!-- Crea una celda en la tabla-->
-            <td><a href="index.html">Home</a></td>
-            <td>|</td>
-            <td><a href="hombre.html">Hombre</a></td>
-            <td>|</td>
-            <td><a href="mujer.html">Mujer</a></td>
-            <td>|</td>
-            <td><a href="accesorios.html">Accesorios</a></td>
-        </tr>
-    </table>
+    <div class="logo-container">
+        <img src="./Assets/Late logo_page-0001.jpg" alt="Logo Tienda Deportiva" width="320" height="200">
+    </div>
+
+    <h1 id="bienvenida">Bienvenidos a la Tienda Deportiva de LATE Sport</h1>
+
+    <nav class="navbar">
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li>|</li>
+            <li><a href="hombre.html">Hombre</a></li>
+            <li>|</li>
+            <li><a href="mujer.html">Mujer</a></li>
+            <li>|</li>
+            <li><a href="accesorios.html">Accesorios</a></li>
+        </ul>
+    </nav>
+
+    <!--<section class="flex-container">
+    <div class="container">
+        <h1>¿Quiénes Somos?</h1>
+        <p>Somos una empresa que ofrece una gran variedad de productos deportivos...</p>
+    </div>
+    <div class = "container"> 
+        <h1>¿Que ofrecemos?</h1>
+        <p>
+            Ofrecemos una gran variedad de productos deportivos, para que puedas encontrar todo lo que necesitas para tu estilo de vida deportivo.
+        </p>
+    </div>
+    <div class = "container"> 
+        <h1>¿Necesitas ayuda?</h1>
+        <p>
+            Puedes contactarnos a traves de nuestras redes sociales o por correo electronico.
+        </p>
+    </div>
+    </section>-->
+
+    <!--<div class="grid-container">
+        <div class="text">  
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incidunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrum exercitationem ullamco laboriosam, nisi ut aliquid ex ea commodi consequatur. Duis aute irure reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint obcaecat cupiditat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+        </div>
+        <div class="text">  
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incidunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrum exercitationem ullamco laboriosam, nisi ut aliquid ex ea commodi consequatur. Duis aute irure reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint obcaecat cupiditat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        </div>
+        <div class="text">  
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incidunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrum exercitationem ullamco laboriosam, nisi ut aliquid ex ea commodi consequatur. Duis aute irure reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint obcaecat cupiditat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        </div>
+    </div>-->
+    
+    <!---
+    <div class="container">
+        <div class="item">ITEM 1 </div>
+        <div class="item">ITEM 2 </div> 
+        <div class="item">ITEM 3 </div> 
+        <div class="item">ITEM 4 </div> 
+        <div class="item">ITEM 5 </div>  
+    </div>-->
+
+    <div class=" container">
+        <div class="header">HEADER</div>
+        <div class="sidebar">SIDEBAR</div> 
+        <div class="main">
+            <div class="main-container">  
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incidunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrum exercitationem ullamco laboriosam, nisi ut aliquid ex ea commodi consequatur. Duis aute irure reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint obcaecat cupiditat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </div>
+        </div> 
+        <div class="footer">FOOTER</div> 
+    </div>
+
+    <footer>    
+         <p>© 2023 LATE Sport. Todos los derechos reservados.</p>
+    </footer>
 </body>
+
   
 
 </html>
